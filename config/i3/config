@@ -21,7 +21,7 @@ font pango:monospace 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
+# exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -188,15 +188,17 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
-exec polybar
 exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 exec --no-startup-id pasystray
-exec betterlockscreen -u ~/Pictures/Wallpapers/sunset-8k-forest-4k-wallpaper-preview.jpg
 exec --no-startup-id greenclip daemon
 exec --no-startup-id /usr/bin/lxqt-policykit-agent &
 exec --no-startup-id xfce4-power-manager &
+
+# Program redshift at Madrid coordenates
+exec redshift -l 40.4:-3.7 -t 6500:3500 &
+
 
 
 # lock after idle:
@@ -267,3 +269,5 @@ client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
 client.focused_inactive #56737a #1e1e20 #56737a #2c5159 #2c5159
 client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
 client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
+
+include ~/.config/i3/config.local
