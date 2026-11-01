@@ -203,7 +203,10 @@ exec redshift -l 40.4:-3.7 -t 6500:3500 &
 
 # lock after idle:
 # exec xset s 600 0
-# exec --no-startup-id xss-lock -- betterlockscreen --off 60 -l dim &
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+#lock at suspend
+exec --no-startup-id xss-lock --transfer-sleep-lock -- lock.sh 
 
 
 # --- Window Spaccing --- #
@@ -221,7 +224,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+Shift+t exec thunar
 
 # open this config file 
-bindsym $mod+Control+c exec xfce4-terminal -e "nvim /home/iVase/.config/i3/config"
+bindsym $mod+Control+c exec xfce4-terminal -e "nvim "$HOME"/.config/i3/config"
 
 # universal copy
 bindsym $mod+y exec --no-startup-id xclip -o -selection primary | xclip -i -selection clipboard
