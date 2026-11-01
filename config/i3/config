@@ -266,11 +266,20 @@ default_floating_border pixel 2
 
 # color theme: Gr
 # target    border   backgr.  text     indicator child_border
-client.background #1e1e20
-client.focused #56737a #1e1e20 #56737a #56737a #56737a
-client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.focused_inactive #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
+# client.background #1e1e20
+# client.focused #56737a #1e1e20 #56737a #56737a #56737a
+# client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
+# client.focused_inactive #56737a #1e1e20 #56737a #2c5159 #2c5159
+# client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
+# client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
+
+# color theme: Tokyo Night
+# target         border    backgr.   text      indicator child_border
+client.background       #1a1b26
+client.focused          #7aa2f7   #1a1b26   #c0caf5   #7aa2f7   #7aa2f7
+client.unfocused        #414868   #1a1b26   #565f89   #24283b   #24283b
+client.focused_inactive #414868   #1a1b26   #565f89   #24283b   #24283b
+client.urgent           #f7768e   #1a1b26   #1a1b26   #f7768e   #f7768e
+client.placeholder      #414868   #1a1b26   #565f89   #24283b   #24283b
 
 include ~/.config/i3/config.local

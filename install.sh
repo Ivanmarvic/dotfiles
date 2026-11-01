@@ -37,3 +37,7 @@ case "$choice" in
         exit 1
         ;;
 esac
+
+echo "setting terminal theme in xfce4-terminal"
+mkdir -p ~/.local/share/xfce4/terminal/colorschemes
+ln -sfn ~/dotfiles/appearence/terminal-tokyo-night.theme ~/.local/share/xfce4/terminal/colorschemes/tokyo-night.theme
