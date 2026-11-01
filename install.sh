@@ -15,6 +15,7 @@ mkdir -p ~/.config/i3 ~/.config/polybar ~/.local/bin/
 ln -sfn ~/dotfiles/config/i3/config ~/.config/i3/config
 ln -sfn ~/dotfiles/config/polybar/config.ini ~/.config/polybar/config.ini
 ln -sfn ~/dotfiles/bin/* ~/.local/bin/
+ln -sfn ~/dotfiles/tmux.conf ~/.tmux.conf
 
 echo "Available specific configs:"
 echo "0) Desktop"
